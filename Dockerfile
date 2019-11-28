@@ -1,4 +1,4 @@
-FROM openjdk:8-alpine
+FROM openjdk:8-ubuntu 18.04
 
 # Required for starting application up.
 RUN apk update && apk add /bin/sh
