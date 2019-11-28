@@ -1,7 +1,7 @@
-FROM ubuntu:18.04
+FROM openjdk:8-alpine
 
 # Required for starting application up.
-RUN apt update && apt add /bin/sh
+RUN apk update && apk add /bin/sh
 
 RUN mkdir -p /opt/app
 ENV PROJECT_HOME /opt/app
